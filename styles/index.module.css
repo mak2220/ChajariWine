@@ -1,0 +1,47 @@
+.container{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgb(244,196,62);
+}
+.main{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: 100vh;
+  background: rgb(244,196,62);
+}
+
+.title{
+  text-align: center;
+  padding: 15px 0px;
+  color: rgb(255, 255, 255);
+}
+
+
+.subtitle {
+  padding: 10px;
+  width: 100%;
+  background: rgb(244,196,62);
+}
+
+.link{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.link:hover{
+  color: rgb(51,51,139);
+}
+
+.img{
+  height: 70vh;
+  width: auto;
+}
+
+@media (max-width: 350px) {
+  
+  .img{
+    height: 60vh;
+    width: auto;
+  }
+}

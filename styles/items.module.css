@@ -1,0 +1,179 @@
+.main{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin-bottom: 100px;
+}
+
+.img{
+    position: absolute;
+    height: 35vw;
+    width: auto;
+    top: 100px;
+    left: -3vw;
+    margin: 0;
+    z-index: 0;    
+}
+
+.name{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    position: relative;
+    z-index: 1;
+}
+
+.subtitle{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    font-weight: bold;
+    position: relative;
+    z-index: 1; 
+}
+
+.text{
+    position: relative;
+    width: 70vw;
+    text-align: justify;
+    z-index: 1; 
+}
+.btnPrincipal{
+    text-align: center;
+}
+
+.btn{
+    width: 80%;
+    position: relative;
+    padding: 8px;
+    z-index: 1;
+}
+
+.btn:hover{
+    background: rgb(255, 255, 255);
+    color:rgb(13,110,253);
+    border:1px solid rgb(13,110,253);
+}
+
+.btnHidden{
+    display: none;
+}
+/* .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+    padding: 10px 0;
+    z-index: 10;
+} */
+@media (max-width: 851px){
+    .img{
+        top: 130px;
+        height: 30%;
+        width: auto;
+    }
+    .name{
+        text-align:center;
+        z-index: 1;
+    }
+    .subtitle{
+        width: 500px;
+        text-align:center;
+        z-index: 1;
+    }
+    .text{
+        width: 500px;
+        text-align: justify;
+    }
+    .list{
+        margin-bottom: 220px;
+    }
+    
+}
+@media (max-width: 650px){
+    .img{
+        height: 25%;
+        width: auto;
+        top:122px;
+    }
+    .name{
+        text-align:center;
+        z-index: 1;
+    }
+    .subtitle{
+        width: 400px;
+        text-align:center;
+        z-index: 1;
+    }
+    .text{
+        width: 400px;
+        text-align: justify;
+    }
+    .list{
+        margin-bottom: 220px;
+    }
+}
+@media (max-width: 450px){
+    
+    .list{
+        margin-bottom: 220px;
+    }
+    .items{
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .img{
+        height: 25%;
+        width: auto;
+        position: absolute;
+        top:129px;
+        left: -6vw;
+        
+    }
+    .img2{
+        height: 20%;
+        width: auto;
+        position: absolute;
+        top:129px;
+        left: -2vw;
+    }
+    .name{
+        text-align:center;
+        width: 70vw;
+        z-index: 1;
+    }
+    .subtitle{
+        width: 80vw;
+        text-align:center;
+        z-index: 1;
+    }
+    .text{
+        width: 80vw;
+        padding-right: 10px;
+        text-align: justify;
+    }
+    .btn{
+        width: 70vw;
+        left: 5vw;
+    }        
+    .btnHidden{
+        display:block;
+        margin: 20px 0;
+    }
+    .footer{
+        position: relative;
+        bottom: -260px;
+    }
+}

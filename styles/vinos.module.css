@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot:wght@400&display=swap');
+
+.protest-riot-regular {
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main{
+  background: rgb(244,196,62);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+.title{
+  margin: 50px;
+  text-align: center;
+  font-family:"Protest Riot";
+  font-size: 50px;
+}
+
+.list {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Estilo para cada elemento de la lista */
+  .list li {
+    width: calc(20% - 10px); /* Ajusta el ancho según tus necesidades */
+    position: relative;
+    height: 200px;
+    padding: 5px;
+    background: rgb(255, 255, 255) ;
+    margin: 1px;
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho del elemento */
+    z-index:3;
+    
+  }
+
+  .info{
+    z-index:3;
+  }
+
+  .list li img{
+    width: 40%;
+    height: auto;
+    float: right;
+    position: relative;
+    z-index:1;
+    
+  }
+
+  .btn{
+    position: absolute;
+    bottom: 1px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(13,110,253);
+    width: 95%;
+    text-align: center;
+  }
+
+  .btn:hover{
+    background: rgb(255, 255, 255);
+    color:rgb(13,110,253);
+    border:1px solid rgb(13,110,253);
+  }
+
+  
+  @media (max-width: 1220px){
+    .list li{
+      position: relative;
+      width: calc(25% - 10px);
+    }
+    .list li img{
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 30px 10px 0 0;
+      width: 20%;
+    }
+  }
+
+  @media (max-width: 600px){
+    .list li{
+      position: relative;
+      width: calc(50% - 10px);
+    }
+  }
+
+  @media (max-width: 400px){
+    .title{
+      font-size: 25px;
+      margin: 20px 5px;      
+    }
+    
+    .list{
+      flex-direction: column;
+      align-items: center;
+    }
+    .list li{
+      display: flex;
+      width: 90%;
+      position: relative;
+      height: 250px;
+      margin-bottom: 20px;
+      border-top-left-radius: 10px;
+    }
+    .list li img{
+      position: absolute;
+      height: 55%;
+      width: auto;
+      top: 10px;
+      left: 0;
+    }
+    .info h4{
+      width: 130px;
+      word-wrap: break-word;
+      position: absolute;
+      left: 40%;
+      top: 30%;
+    }
+    .info h5{
+      position: absolute;
+      right: 5px;
+      font-size: 70%;
+    }
+    .info h6{
+      position: absolute;
+      top: 30px;
+      right: 5px;
+    }
+  }
+
+
+  

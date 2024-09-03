@@ -1,0 +1,114 @@
+.main{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    text-align: center;
+    background: rgb(244,196,62);
+    
+}
+
+.title{
+    padding: 20px;
+}
+
+.ul{
+    list-style-type: none;
+    padding: 0;
+    background: rgb(244,196,62);
+}
+.data{
+    position: relative;
+    z-index:3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.subtitle{
+    width: 400px;
+    text-align: left;
+}
+.quantityInput{
+    width: 80px;
+    background:rgb(244, 196, 62); 
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+.quantityInput[type="number"] {
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.dataImg{
+    position: relative;
+    z-index:1;
+    height: 20vh;
+    padding: 10px;
+    
+}
+.img{
+    height: 100%;
+}
+.pages{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+.link{
+    text-decoration: none;
+    padding: 5px;
+}
+.link:hover{
+    background: rgb(12,100,230);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+}
+.linea {
+    width: 90vw; 
+    border: none;
+    height: 1px; 
+    background-color: black; 
+}
+
+.cartEmpty{
+    display: none;
+}
+.footer{
+    width: 100%;
+    position: relative;
+    bottom:-160px;
+}
+
+@media( max-width: 500px){
+    .subtitle{
+        width: 250px;
+        text-align: center;
+    }
+    .dataImg{
+        padding: 0px;
+        left: -25px;
+    }
+    .footer{
+        position: relative;
+        bottom: -100px;
+    }
+}
+
+@media( max-width: 350px){
+    .subtitle{
+        width: 250px;
+        text-align: center;
+    }
+    .ul{
+        text-align: left;
+    }
+    .quantityInput{
+        width: 50px;
+    }
+    .img{
+        height: 80%;
+        width: auto;
+        position: relative;
+        top: 20px;
+    }
+}
