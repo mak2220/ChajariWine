@@ -7,21 +7,25 @@ import Link from "next/link";
 import Footer from "../component/Footer";
 import Navbar from "../component/Navbar";
 
-export const getStaticProps: GetServerSideProps<ConnectionStatus> = async () => {
+export const getServerSideProps: GetServerSideProps = async () => {
   try {
     await clientPromise;
-    
+
     return {
-      props: { isConnected: true },
-      revalidate: 60,  // ISR: Revalida cada 60 segundos
+      props: {
+        isConnected: true
+      }
     };
-  } catch (e) {
-    console.error(e);
+  } catch (error) {
+    console.error("Error connecting to MongoDB:", error);
     return {
-      props: { isConnected: false },
+      props: {
+        isConnected: false
+      }
     };
   }
 };
+
 
 export default function Home({
   isConnected,
