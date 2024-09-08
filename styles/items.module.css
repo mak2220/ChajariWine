@@ -128,20 +128,19 @@
 @media (max-width: 450px){
     
     .list{
-        margin-bottom: 220px;
+        margin-bottom: 20px;
     }
     .items{
         display: flex;
         flex-direction: row;
 
     }
-
     .img{
         height: 25%;
         width: auto;
         position: absolute;
         top:129px;
-        left: -6vw;
+        left: -30px;
         
     }
     .img2{
@@ -173,10 +172,6 @@
     .btnHidden{
         display:block;
         margin: 20px 0;
-    }
-    .footer{
-        position: relative;
-        bottom: -260px;
     }
 }
 @media (max-width: 300px){
