@@ -24,6 +24,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        min-height: 80%;
     }
     .wineId{
         width: 50%;
