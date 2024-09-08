@@ -42,7 +42,9 @@ const SearchPage = ({ wines }) => {
           </div>
         ))}
       </div>
-      <Footer/>
+      <div className={styles.footer}>
+        <Footer/>
+      </div>
     </main>
   );
 };

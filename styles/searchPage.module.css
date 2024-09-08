@@ -10,8 +10,30 @@
     margin: 10px;
     width: calc(25% - 20px);
 }
+.footer{
+    position: relative;
+    bottom: 0;
+}
+
+@media(max-width: 580px){
+    .main{
+        width: 100vw;
+    }
+    .results{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .wineId{
+        width: 50%;
+    }
+}
 
 @media(max-width: 350px){
+    .main{
+        width: 100vw;
+    }
     .results{
         display: flex;
         flex-direction: column;

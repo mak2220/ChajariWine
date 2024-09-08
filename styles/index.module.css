@@ -40,8 +40,22 @@
 
 @media (max-width: 350px) {
   
+  .container{
+    width: 100vw;
+  }
   .img{
-    height: 60vh;
+    height: 50vh;
+    width: auto;
+  }
+}
+
+@media (max-width: 250px) {
+  
+  .container{
+    width: 100vw;
+  }
+  .img{
+    height: 40vh;
     width: auto;
   }
 }

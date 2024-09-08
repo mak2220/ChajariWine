@@ -12,7 +12,7 @@
     justify-content: center;
     align-items: center;
     height: 70vh;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 }
 
 .img{
@@ -68,14 +68,12 @@
 .btnHidden{
     display: none;
 }
-/* .footer {
-    position: fixed;
-    bottom: 0;
+.footer {
+    bottom: -60px;
     width: 100%;
-    
-    padding: 10px 0;
+    padding: 0;
     z-index: 10;
-} */
+}
 @media (max-width: 851px){
     .img{
         top: 130px;
@@ -175,5 +173,13 @@
     .footer{
         position: relative;
         bottom: -260px;
+    }
+}
+@media (max-width: 300px){
+    .img{
+        left: -30px;
+    }
+    .btnPrincipal{
+        display: none;
     }
 }
