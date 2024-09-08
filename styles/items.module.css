@@ -103,6 +103,7 @@
         height: 25%;
         width: auto;
         top:122px;
+        left: -30px;
     }
     .name{
         text-align:center;
@@ -118,7 +119,10 @@
         text-align: justify;
     }
     .list{
-        margin-bottom: 220px;
+        margin-bottom: 20px;
+    }
+    .btnPrincipal{
+        display: none;
     }
 }
 @media (max-width: 450px){
