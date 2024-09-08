@@ -38,7 +38,7 @@
   width: auto;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 600px) {
   
   .container{
     width: 100vw;
