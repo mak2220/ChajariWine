@@ -2,16 +2,16 @@ import nodemailer from 'nodemailer';
 
 export default async (req, res) => {
   if (req.method === 'POST') {
-    const { name, email, message } = req.body;
+    const { name, email, phone, message } = req.body; // Incluye 'phone'
 
     // Configurar el transportador con Outlook
     const transporter = nodemailer.createTransport({
       host: 'smtp.office365.com',
       port: 587,
-      //secure: false, true for 465, false for other ports
+      secure: false, // Asegúrate de que sea false para el puerto 587
       auth: {
-        user: process.env.OUTLOOK_USER, // tu correo
-        pass: process.env.OUTLOOK_PASS, // tu contraseña
+        user: process.env.OUTLOOK_USER, // tu correo de Outlook
+        pass: process.env.OUTLOOK_PASS, // tu contraseña de Outlook
       },
       tls: {
         rejectUnauthorized: false,
@@ -21,8 +21,13 @@ export default async (req, res) => {
     const mailOptions = {
       from: process.env.OUTLOOK_USER,
       to: process.env.OUTLOOK_USER,
-      subject: `Mensaje de contacto de ${name} ${email} ${phone}`,
-      text: message,
+      subject: `Mensaje de contacto de ${name} (${email})`, // Ajusta la estructura del subject
+      text: `
+        Nombre: ${name}
+        Correo: ${email}
+        Teléfono: ${phone}
+        Mensaje: ${message}
+      `,
     };
 
     try {
@@ -36,3 +41,4 @@ export default async (req, res) => {
     res.status(405).json({ error: 'Método no permitido' });
   }
 };
+
